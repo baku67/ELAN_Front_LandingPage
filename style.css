@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: 'Poppins', sans-serif;
     /* overflow: hidden; */
 
     -ms-overflow-style: none;  
@@ -17,11 +18,30 @@ header {
     height: 100vh;
     width: 100%;
 }
+#headerLineWrapper {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
 h1 {
     color: white;
+    color: white;
+    margin: 0.45em 35px;
+}
+#headerLineWrapper nav {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+#headerLineWrapper ul {
+    display: inline-flex;
+    list-style-type: none;
 }
 nav li {
     color: white;
+    margin: 0 10px;
+}
+#socialList li {
+    margin: 0 -12px;
 }
 .fa {
     padding: 20px;
