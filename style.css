@@ -36,6 +36,13 @@ h1 {
     display: inline-flex;
     list-style-type: none;
 }
+#tabList li {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+#tabList li:hover {
+    color: rgb(221, 221, 221);
+}
 #headerContentWrapper {
     margin: 3% 10%;
     display: inline-flex;
@@ -86,6 +93,11 @@ nav li {
     background: rgba(59, 88, 152, 0);
     color: white;
 }
+.fa-solid {
+    color: white;
+}
+
+
 
 
 
@@ -94,6 +106,29 @@ main {
     height: 100vh;
     width: 100%;
 
+}
+#contentHeaderWrapper {
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+
+}
+#contentHeaderWrapper p {
+    font-size: 80%;
+    color: rgba(127, 127, 127, 1);
+}
+#contentListBoxes {
+    list-style-type: none;
+    display: inline-flex;
+    margin: 30px 10%;
+}
+#contentListBoxes li {
+    color: white;
+    margin: 0 10px;
+    background: radial-gradient(rgb(139,195,245), #1294b8);
+    border-radius: 7px;
+    width: 275px;
+    height: 275px;
 }
 
 /************************** FOOTER ***************************************************************/
