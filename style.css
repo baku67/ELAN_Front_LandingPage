@@ -1,9 +1,61 @@
 body {
+    margin: 0;
+    /* overflow: hidden; */
 
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
 }
+body::-webkit-scrollbar {
+    display: none; 
+} 
 
+
+
+/************************* *HEADER ***************************************************************/
 header {
     background: radial-gradient(rgb(139,195,245), #1294b8);
     height: 100vh;
     width: 100%;
+}
+h1 {
+    color: white;
+}
+nav li {
+    color: white;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.fa-facebook {
+    background: rgba(59, 88, 152, 0);
+    color: white;
+}
+.fa-twitter {
+    background: rgba(59, 88, 152, 0);
+    color: white;
+}
+.fa-instagram {
+    background: rgba(59, 88, 152, 0);
+    color: white;
+}
+
+
+
+/************************** MAIN ***************************************************************/
+main {
+    height: 100vh;
+    width: 100%;
+
+}
+
+/************************** FOOTER ***************************************************************/
+footer {
+    height: 10vh;
+    width: 100%;
+    background-color: #26272b;
 }
