@@ -1,5 +1,11 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
+    height:100%;
     font-family: 'Poppins', sans-serif;
     /* overflow: hidden; */
 
@@ -95,6 +101,7 @@ nav li {
 }
 .fa-solid {
     color: white;
+    font-size: 2em;
 }
 
 
@@ -120,20 +127,106 @@ main {
 #contentListBoxes {
     list-style-type: none;
     display: inline-flex;
-    margin: 30px 10%;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding-inline-start: 0px;
+
+    margin: 30px auto;
+    width: 100%;
+    justify-content: center;
 }
 #contentListBoxes li {
     color: white;
     margin: 0 10px;
+    padding: 50px 20px;
     background: radial-gradient(rgb(139,195,245), #1294b8);
     border-radius: 7px;
-    width: 275px;
-    height: 275px;
+    width: 220px;
+    height: 150px;
 }
+.centered {
+    text-align: center;
+}
+.contentBoxText {
+    font-size: 0.8em;
+}
+.centeredIcon {
+    text-align: center;
+    width: 100%;
+}
+
+#contentListPoeple {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    display: inline-flex;
+
+    text-align: center;
+}
+#contentListPoeple li {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 0 30px;
+}
+
+#contentListPoeple li img {
+    width: 100px;
+    height: 100px; 
+    /* overflow: hidden; */
+
+    filter: grayscale(1);
+    transition: all 0.5s;
+}
+#contentListPoeple li img:hover {
+    /* overflow: hidden; */
+
+    transform: scale(1.2);
+    filter: grayscale(0);
+    cursor: pointer;
+}
+.peopleImgWrapper {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+
+    margin: 0 auto;
+    display: inline-block;
+    overflow: hidden;
+}
+
+#contentHeaderWrapper2 {
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+
+}
+#contentHeaderWrapper2 p {
+    font-size: 80%;
+    color: rgba(127, 127, 127, 1);
+}
+
+.poepleHeader, .peopleFooter {
+    font-weight: bold;
+}
+.greyed {
+    color: rgba(127, 127, 127, 1);
+    font-size: 0.7em;
+    font-weight: 400 !important;
+
+    position: relative;
+    bottom: 10px;
+}
+
 
 /************************** FOOTER ***************************************************************/
 footer {
     height: 10vh;
     width: 100%;
     background-color: #26272b;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
