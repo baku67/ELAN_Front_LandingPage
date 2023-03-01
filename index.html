@@ -13,6 +13,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <!-- JQuery pour le scroll/OffSet() -->
+        <script type="text/javascript" src="/jquery/jquery-3.6.0.min.js"></script>    
     </head>
 
     <body>
@@ -21,17 +23,36 @@
 
         <div id="scrollToTop"><i id="scrollToTopArrow" class="fa-solid fa-arrow-up"></i></div>
         <script>
+
             window.onload = function() {
+                // WIP affichage du bouton Scroll only quand view pas au top de la page
+                // https://www.sitepoint.com/community/t/quick-when-element-reaches-the-top-of-the-window/111776
+                document.getElementById("scrollToTop").style.display = "block";
+
+                //document.addEventListener("scroll", function() {
+
+                    //var truc = document.querySelector('#header').offset();
+                    //console.log("scrollTop_header:" + document.getElementById("header").scrollTop);
+                    
+                    // console.log("offset: " + document.querySelector('#header').offset());
+
+                    //if (document.getElementById("header").scrollTop !== 0) {
+                    //    document.getElementById("scrollToTop").style.display = "block";
+                    //}
+                    //else if (document.getElementById("header").scrollTop === 0) {
+                    //    document.getElementById("scrollToTop").style.display = "none";
+                    //}
+                //})
                 document.getElementById("scrollToTop").addEventListener("click", function() {
-                    console.log("test");
                     window.scrollTo({top: 0, behavior: 'smooth'});
                 })
+                
             }
         </script>
 
         <div id="wrapper">
         
-            <header>
+            <header id="header">
                 <div id="headerLineWrapper">
                     <h1>Kucra</h1>
 
@@ -181,7 +202,7 @@
                             </div>
                             <h5>Doing a cross country road trip</h5>
                             <p class="blogText">We craft digital, graphic and dimensional thinking, to create category leading brand.</p>
-                            <p class="blogReadmore">Reade more</p>
+                            <p class="blogReadmore">Read more</p>
                         </div>
                     </li>
 
@@ -193,7 +214,7 @@
                             </div>
                             <h5>New exhibition at our Museum</h5>
                             <p class="blogText">Even the all-powerful Pointing has no control about the blind almost unorthographic.</p>
-                            <p class="blogReadmore">Reade more</p>
+                            <p class="blogReadmore">Read more</p>
                         </div>
                     </li>
 
@@ -205,7 +226,7 @@
                             </div>
                             <h5>Design your apps in your own way</h5>
                             <p class="blogText">Pityful a rethoric question ran over her cheek, then she continued her way.</p>
-                            <p class="blogReadmore">Reade more</p>
+                            <p class="blogReadmore">Read more</p>
                         </div>
                     </li>
                 </ul>
