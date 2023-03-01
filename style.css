@@ -11,11 +11,35 @@ body {
 
     -ms-overflow-style: none;  
     scrollbar-width: none;  
+
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 body::-webkit-scrollbar {
     display: none; 
 } 
 
+#scrollToTop {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background-color: #3e3e3e;
+    border-radius: 100px;
+
+    cursor: pointer;
+    bottom: 25px;
+    right: 25px;
+    
+    z-index: 999;
+}
+#scrollToTopArrow {
+    position: relative;
+    font-size: 1.2em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 
 /************************* *HEADER ***************************************************************/
@@ -309,6 +333,37 @@ main {
     font-size: 0.8em;
     font-weight: 500;
     cursor: pointer;
+}
+
+#fixedGear {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    left: -1px;
+    top: 20%;
+    background-color: #3e3e3e;
+    border-radius: 3px;
+
+    cursor: pointer;
+}
+
+#gearIcon {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: 30%;
+    left: 30%;
+    /* transform: translate(-50%, -50%); */
+
+    animation: gearRotate 6s infinite linear;
+}
+@keyframes gearRotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 

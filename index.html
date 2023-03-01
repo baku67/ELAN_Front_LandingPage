@@ -16,6 +16,19 @@
     </head>
 
     <body>
+
+        <div id="fixedGear"><i id="gearIcon" class="fa-solid fa-gear"></i></div>
+
+        <div id="scrollToTop"><i id="scrollToTopArrow" class="fa-solid fa-arrow-up"></i></div>
+        <script>
+            window.onload = function() {
+                document.getElementById("scrollToTop").addEventListener("click", function() {
+                    console.log("test");
+                    window.scrollTo({top: 0, behavior: 'smooth'});
+                })
+            }
+        </script>
+
         <div id="wrapper">
         
             <header>
