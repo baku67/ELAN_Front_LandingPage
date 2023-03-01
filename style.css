@@ -79,6 +79,7 @@ nav li {
 #socialList li {
     margin: 0 -12px;
 }
+
 .fa {
     padding: 20px;
     font-size: 30px;
@@ -99,9 +100,24 @@ nav li {
     background: rgba(59, 88, 152, 0);
     color: white;
 }
+.fa-skype {
+    color: white;
+    font-size: 2em;
+}
 .fa-solid {
     color: white;
     font-size: 2em;
+}
+.black {
+    color: black !important;
+    background-color: white;
+    border-radius: 100px;
+    font-size: 20px;
+    width: 15px;
+}
+
+.mid {
+    transform: translateX(-9px);
 }
 
 
@@ -163,15 +179,15 @@ main {
 
     text-align: center;
 }
-#contentListPoeple li {
+.contentListPoepleLi {
     display: inline-flex;
     flex-direction: column;
     margin: 0 30px;
 }
 
 #contentListPoeple li img {
-    width: 100px;
-    height: 100px; 
+    width: 130px;
+    height: 130px; 
     /* overflow: hidden; */
 
     filter: grayscale(1);
@@ -185,8 +201,8 @@ main {
     cursor: pointer;
 }
 .peopleImgWrapper {
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
     border-radius: 100px;
 
     margin: 0 auto;
@@ -215,6 +231,47 @@ main {
 
     position: relative;
     bottom: 10px;
+}
+
+.peopleImgWrapper {
+    position: relative;
+}
+.peopleImgSocialList {
+    position: absolute;
+    display: inline-flex;
+    flex-direction: column;
+    padding-inline-start: 0px;
+    z-index: 999;
+
+    /* top: 20px; */
+    top: 5px;
+    left: -25px;
+    transition: all 0.5s;
+}
+
+
+#people1:hover #people1Social  {
+    top: 24px !important;
+    left: 11px !important;
+}
+#people2:hover #people2Social  {
+    top: 24px !important;
+    left: 11px !important;
+}
+#people3:hover #people3Social  {
+    top: 24px !important;
+    left: 11px !important;
+}
+#people4:hover #people4Social  {
+    top: 24px !important;
+    left: 11px !important;
+}
+
+.peopleImgSocialList li {
+    height: 27px;
+}
+.peopleImgSocialList li a {
+    padding: 3px;
 }
 
 
