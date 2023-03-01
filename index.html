@@ -27,9 +27,12 @@
             window.onload = function() {
                 // WIP affichage du bouton Scroll only quand view pas au top de la page
                 // https://www.sitepoint.com/community/t/quick-when-element-reaches-the-top-of-the-window/111776
-                document.getElementById("scrollToTop").style.display = "block";
+                document.getElementById("scrollToTop").style.display = "none";
 
-                //document.addEventListener("scroll", function() {
+                document.addEventListener("scroll", function() {
+
+                    document.getElementById("scrollToTop").style.display = "block";
+                    document.getElementById("scrollToTop").classList.add("fadeInScroolToTop");
 
                     //var truc = document.querySelector('#header').offset();
                     //console.log("scrollTop_header:" + document.getElementById("header").scrollTop);
@@ -42,11 +45,11 @@
                     //else if (document.getElementById("header").scrollTop === 0) {
                     //    document.getElementById("scrollToTop").style.display = "none";
                     //}
-                //})
+                })
                 document.getElementById("scrollToTop").addEventListener("click", function() {
                     window.scrollTo({top: 0, behavior: 'smooth'});
                 })
-                
+
             }
         </script>
 
