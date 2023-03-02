@@ -574,7 +574,89 @@ main {
     margin: 0 auto;
 }
 
+#pricingContent h4 {
+    text-align:center;
+    margin-block-start: 0;
+    margin-block-end: 5px;
+    font-size: 1.6em;
+}
+#pricingContent h6 {
+    text-align:center;
+}
+#pricingText {
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-size: 80%;
+    color: rgba(127, 127, 127, 1);
+}
 
+
+#offersDiv {
+    display: inline-flex;
+    margin: 0 auto;
+    justify-content: center;
+    width: 100%;
+}
+.offerCard {
+    margin: 0 15px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 11px;
+    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.4));
+    width: 250px;
+}
+
+.fa-circle-check {
+    color: #00b300;
+}
+.fa-circle-xmark {
+    color: red;
+}
+
+.priceText {
+    text-align: center;
+    color: #7f7f7f;
+    font-size: 0.7em;
+}
+.dollarPrice {
+    font-size: 2.1em;
+    font-weight: 400;
+    color: #3983eb;
+    position: relative;
+    bottom: 20px;
+}
+.priceNbr {
+    color: #3983eb;
+    font-size: 4.7em;
+}
+
+#label {
+    position: absolute;
+    width: 33px;
+    padding: 9px;
+    top: 0;
+    right: 0;
+    background-color: #3478d8;
+    color: white;
+    line-height: 15px;
+    margin-block-start: 0;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    font-weight: 200;
+}
+
+.offerList {
+    list-style-type: none;
+    margin-block-start: 20px;
+    margin-block-end: 28px;
+    line-height: 31px;
+    padding-inline-start: 0;
+}
+.offerList span {
+    float: right;
+}
 
 
 
