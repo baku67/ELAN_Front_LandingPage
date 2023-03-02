@@ -510,6 +510,21 @@ main {
 }
 
 
+#pricingHeader {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+}
+#pricingHeaderLeft {
+    display: inline-flex;
+    flex-direction: column;
+}
+#pricingHeaderRight {
+    width: 300px;
+}
+
+
+
 
 
 /************************** FOOTER ***************************************************************/
