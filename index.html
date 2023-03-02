@@ -50,6 +50,38 @@
                     window.scrollTo({top: 0, behavior: 'smooth'});
                 })
 
+                document.getElementById("home").addEventListener("click", function() {
+                    document.getElementById("header").scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+                })
+
+                document.getElementById("features").addEventListener("click", function() {
+                    document.getElementById("featuresTitle").scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+                })
+
+                document.getElementById("client").addEventListener("click", function() {
+                    document.getElementById("clientTitle").scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+                })
+
+                document.getElementById("pricing").addEventListener("click", function() {
+                    document.getElementById("pricingContent").scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+                })
+
+                document.getElementById("faq").addEventListener("click", function() {
+                    document.getElementById("parallaxImg").scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+                })
+
+                document.getElementById("about").addEventListener("click", function() {
+                    document.getElementById("pricingHeader").scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+                })
+
+                document.getElementById("blog").addEventListener("click", function() {
+                    document.getElementById("contentBlogWrapper").scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+                })
+
+                document.getElementById("contact").addEventListener("click", function() {
+                    document.getElementById("footer").scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+                })
+
             }
         </script>
         
@@ -57,18 +89,18 @@
             
                 <header id="header">
                     <div id="headerLineWrapper">
-                        <h1>Kucra</h1>
+                        <h1 id="headerBrand">Kucra</h1>
 
                         <nav>
                             <ul id="tabList">
-                                <li>HOME</li>
-                                <li>FEATURES</li>
-                                <li>CLIENT</li>
-                                <li>PRICING</li>
-                                <li>FAQ</li>
-                                <li>ABOUT</li>
-                                <li>BLOG</li>
-                                <li>CONTACT</li>
+                                <li id="home">HOME</li>
+                                <li id="features">FEATURES</li>
+                                <li id="client">CLIENT</li>
+                                <li id="pricing">PRICING</li>
+                                <li id="faq">FAQ</li>
+                                <li id="about">ABOUT</li>
+                                <li id="blog">BLOG</li>
+                                <li id="contact">CONTACT</li>
                             </ul>
                         </nav>
 
@@ -95,7 +127,7 @@
                 <main>
 
                     <div id="contentHeaderWrapper">
-                        <h2>Products Features</h2>
+                        <h2 id="featuresTitle">Products Features</h2>
                         <p>It is a long established fact that a reader will be of a page when estableshed fact looking at its layout.</p>
                     </div>
 
@@ -122,7 +154,7 @@
 
 
                     <div id="contentHeaderWrapper2">
-                        <h2>We'r dynamic team of talented people of innovative & marketing expert</h2>
+                        <h2 id="clientTitle">We'r dynamic team of talented people of innovative & marketing expert</h2>
                         <p>To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages of the resulting language.</p>
                     </div>
 
@@ -297,7 +329,7 @@
 
                 </main>
         
-                <footer>
+                <footer id="footer">
                     <ul id="footerList1">
                         <li><i class="brandFooter fa-brands fa-facebook-f"></i></li>
                         <li><i class="brandFooter twitterFooter fa-brands fa-twitter"></i></li>
