@@ -518,9 +518,60 @@ main {
 #pricingHeaderLeft {
     display: inline-flex;
     flex-direction: column;
+    width: 30%;
 }
-#pricingHeaderRight {
-    width: 300px;
+#pricingHeaderRightImg {
+    width: 30%;
+    max-height: 400px;
+    margin-left: 50px;
+}
+
+#pricingHeaderLeft h5 {
+    font-size: 1.1em;
+}
+
+#pricingHeaderLeftStats {
+    display: inline-flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+
+#stat1 {
+    /* margin-left: 15px; */
+    font-weight: 700;
+    font-size: 1.2em;
+}
+#stat2 {
+    margin-left: 15px;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.grisedStats {
+    font-size: 0.8em;
+    color: #7f7f7f;
+    font-weight: 500;
+}
+
+#pricingButton {
+    padding: 10px 20px;
+    background-color: #3f8efd;
+    border-radius: 5px;
+    width: 150px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    border: 0px solid white;
+    margin: 10px 0px 20px 0px;
+}
+
+
+
+#pricingContent {
+    padding: 10px 30px;
+    background-color: #f3f3f3;
+    width: 70%;
+    margin: 0 auto;
 }
 
 
