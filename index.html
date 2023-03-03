@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Landing Page</title>
         <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="mediaQueries.css" />
         <!-- FontAwesome pour icone medias: -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://kit.fontawesome.com/698848973e.js" crossorigin="anonymous"></script>
@@ -21,6 +22,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
         <!-- ScrollReveal -->
         <script src="https://unpkg.com/scrollreveal"></script>
+        <!-- Burger Icon -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>
@@ -97,18 +100,33 @@
                     <div id="headerLineWrapper">
                         <h1 id="headerBrand">Kucra</h1>
 
-                        <nav>
-                            <ul id="tabList">
-                                <li id="home">HOME</li>
-                                <li id="features">FEATURES</li>
-                                <li id="client">CLIENT</li>
-                                <li id="pricing">PRICING</li>
-                                <li id="faq">FAQ</li>
-                                <li id="about">ABOUT</li>
-                                <li id="blog">BLOG</li>
-                                <li id="contact">CONTACT</li>
-                            </ul>
+
+                        <nav class="topnav" id="myTopnav">
+                            <a id="home">HOME</a>
+                            <a id="features">FEATURES</a>
+                            <a id="client">CLIENT</a>
+                            <a id="pricing">PRICING</a>
+                            <a id="faq">FAQ</a>
+                            <a id="about">ABOUT</a>
+                            <a id="blog">BLOG</a>
+                            <a id="contact">CONTACT</a>
+                            <a href="javascript:void(0);" class="iconBurger" onclick="myFunction()">
+                                <i class="fa fa-bars"></i>
+                            </a>
                         </nav>
+
+
+                        <script>
+                            /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+                            function myFunction() {
+                                var x = document.getElementById("myTopnav");
+                                if (x.className === "topnav") {
+                                    x.className += " responsive";
+                                } else {
+                                    x.className = "topnav";
+                                }
+                            }
+                        </script>
 
                         <ul id="socialList">
                             <li><a href="#" class="fa fa-facebook"></a></li>
@@ -342,7 +360,7 @@
                     </div>
 
 
-                    <div style="height:15vh;"></div>
+                    <div style="height:10vh;"></div>
 
 
                     <div id="pricingHeader">
