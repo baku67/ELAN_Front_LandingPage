@@ -771,10 +771,25 @@ main {
 }
 
 .swiper {
-    width: 600px;
+    width: 60%;
     height: 300px;
-  }
+}
 
+
+.testimonialNames {
+    font-size: 1.7em;
+    font-weight: 500;
+    margin-block-end: 0;
+}
+.testimonialCities {
+    margin-block-start: 0;
+    font-weight: 500;
+    color: rgb(178 178 178);
+}
+
+swiper-slide {
+    /* margin: 0 500px; */
+}
 
 
 /************************** FOOTER ***************************************************************/
