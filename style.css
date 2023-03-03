@@ -162,6 +162,30 @@ nav li {
 }
 
 
+#subscribeInput {
+    width: 80%;
+    border-radius: 51px;
+    padding: 8px;
+    border: 0px;
+    background-color: #dddddd;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.7em;
+}
+#subscribeSubmit {
+    position: absolute;
+    right: 55px;
+    transform: translateY(3px);
+    border: 0px;
+    padding: 5px 15px;
+    border-radius: 21px;
+    font-size: 0.7em;
+    color: white;
+    background-color: #4094b9;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+}
+
 
 
 
