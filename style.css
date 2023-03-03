@@ -714,6 +714,68 @@ main {
 }
 
 
+#testimonialsDiv {
+    text-align: center;
+}
+#brandList {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+    list-style-type: none;
+    padding-inline-start: 0;
+    margin: 50px 0;
+}
+
+#brandList li img {
+    width: 120px;
+    opacity: 0.5;
+    bottom: 0px;
+    position: relative;
+    transition: all 0.5s;
+}
+#brandList li img:hover {
+    opacity: 1;
+    cursor: pointer;
+    bottom: 10px;
+}
+
+#testimonialsHeader {
+    width: 40%;
+    margin: 0 auto;
+}
+#testimonialsHeader h2 {
+    color: #4094b9;
+    font-weight: 600;
+    font-size: 2em;
+}
+#testimonialsHeader p {
+    font-size: 110%;
+    color: rgba(127, 127, 127, 1);
+    margin-bottom: 50px;
+}
+
+.testimonialsPeopleImg {
+    width: 90px;
+    border-radius: 100px;
+}
+.testimonialQuote {
+    color: #4094b9;
+    position: absolute;
+    background-color: white;
+    padding: 6px 8px;
+    border-radius: 100px;
+    font-size: 1.3em;
+
+    transform: translateX(-24px);
+}
+
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
+
+
 
 /************************** FOOTER ***************************************************************/
 
