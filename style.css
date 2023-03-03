@@ -62,8 +62,17 @@ body::-webkit-scrollbar {
     transform: translate(-50%, -50%);
 }
 
+.topnav {
+    overflow: hidden;
+}
 
-
+.topnav a {
+    float: left;
+    display: block;
+}
+.topnav .iconBurger {
+    display: none;
+  }
 
 
 
@@ -96,10 +105,10 @@ nav {
     display: inline-flex;
     list-style-type: none;
 } 
-#myTopnav {
+/* #myTopnav {
     overflow: hidden;
-}
-#myTopnav a {
+} */
+/* #myTopnav a {
     transition: all 0.5s;
     cursor: pointer;
 
@@ -109,10 +118,10 @@ nav {
 }
 #myTopnav a:hover {
     color: rgb(221, 221, 221);
-}
-#myTopnav .iconBurger {
+} */
+/* #myTopnav .iconBurger {
     display: none;
-  }
+  } */
 #headerContentWrapper {
     margin: 3% 10%;
     display: inline-flex;
