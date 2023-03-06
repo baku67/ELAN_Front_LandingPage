@@ -61,6 +61,45 @@
 
 @media screen and (max-width: 600px) {
 
+    #contentListPoeple {
+        transform: scale(0.8);
+        gap: 0px 28px;
+    }
+
+    #chevronCollapse {
+        color: black;
+        font-size: 80%;
+        margin: 0 10px;
+        position: relative;
+        bottom: 8px;
+        transform: rotate(180deg);
+    }
+    .chevronInverted {
+        bottom: -8px !important;
+        transform: rotate(0deg) !important;
+    }
+    #blogTitle {
+        display: inline-flex;
+    }
+    #chevronCollapse {
+        display: block;
+    }
+
+    #contentBlog {
+        visibility: collapse;
+        /* overflow: hidden; */
+        height: 0;
+        transition: all 0.5s;
+    }
+    .uncollapsedBlog {
+        visibility: visible !important;
+        height: fit-content !important;
+    }
+
+
+    #fixedGear {
+        display: none;
+    }
     #headerTextsWrapper {
         overflow: hidden;
     }

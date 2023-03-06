@@ -26,6 +26,7 @@
         <script src="https://unpkg.com/scrollreveal"></script>
         <!-- Burger Icon -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/698848973e.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -253,48 +254,61 @@
 
 
 
-                    <div id="contentBlogWrapper">
-                        <h2>Our Blog</h2>
-                        <p>It is a long established fact that a reader will be of a page when established fact looking at its layout</p>
+                    <div id="contentBlogWrapper" class="collapsible" type="button">
+                        <h2 id="blogTitle">Our Blog<i id="chevronCollapse" class="fa-solid fa-chevron-up"></i></h2>
                     </div>
 
-                    <ul id="contentListBlog">
-                        <li>
-                            <div>
-                                <div id="blog1hoverDiv">
-                                    <p id="blogImgText1"><i class="fa-regular fa-user"></i> Calvin Carlo<br><span class="blogDate"><i class="fa-regular fa-clock"></i> 20th March 2021</span></p>
-                                    <img id="blogImg1" src="img/blog1.png" alt="image de blog 1">
-                                </div>
-                                <h5>Doing a cross country road trip</h5>
-                                <p class="blogText">We craft digital, graphic and dimensional thinking, to create category leading brand.</p>
-                                <p class="blogReadmore">Read more</p>
-                            </div>
-                        </li>
+                    <div id="contentBlog" class="content">
 
-                        <li>
-                            <div>
-                                <div id="blog2hoverDiv">
-                                    <p id="blogImgText2"><i class="fa-regular fa-user"></i> Ruben Reed<br><span class="blogDate"><i class="fa-regular fa-clock"></i> 01th July 2021</span></p>
-                                    <img id="blogImg2" src="img/blog2.png" alt="image de blog 2">
-                                </div>
-                                <h5>New exhibition at our Museum</h5>
-                                <p class="blogText">Even the all-powerful Pointing has no control about the blind almost unorthographic.</p>
-                                <p class="blogReadmore">Read more</p>
-                            </div>
-                        </li>
+                        <p id="blogText">It is a long established fact that a reader will be of a page when established fact looking at its layout</p>
 
-                        <li>
-                            <div>
-                                <div id="blog3hoverDiv">
-                                    <p id="blogImgText3"><i class="fa-regular fa-user"></i> Theresa Sinclair<br><span class="blogDate"><i class="fa-regular fa-clock"></i> 25th July 2021</span></p>
-                                    <img id="blogImg3" src="img/blog3.png" alt="image de blog 3">
+                        <ul id="contentListBlog">
+                            <li>
+                                <div>
+                                    <div id="blog1hoverDiv">
+                                        <p id="blogImgText1"><i class="fa-regular fa-user"></i> Calvin Carlo<br><span class="blogDate"><i class="fa-regular fa-clock"></i> 20th March 2021</span></p>
+                                        <img id="blogImg1" src="img/blog1.png" alt="image de blog 1">
+                                    </div>
+                                    <h5>Doing a cross country road trip</h5>
+                                    <p class="blogText">We craft digital, graphic and dimensional thinking, to create category leading brand.</p>
+                                    <p class="blogReadmore">Read more</p>
                                 </div>
-                                <h5>Design your apps in your own way</h5>
-                                <p class="blogText">Pityful a rethoric question ran over her cheek, then she continued her way.</p>
-                                <p class="blogReadmore">Read more</p>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+
+                            <li>
+                                <div>
+                                    <div id="blog2hoverDiv">
+                                        <p id="blogImgText2"><i class="fa-regular fa-user"></i> Ruben Reed<br><span class="blogDate"><i class="fa-regular fa-clock"></i> 01th July 2021</span></p>
+                                        <img id="blogImg2" src="img/blog2.png" alt="image de blog 2">
+                                    </div>
+                                    <h5>New exhibition at our Museum</h5>
+                                    <p class="blogText">Even the all-powerful Pointing has no control about the blind almost unorthographic.</p>
+                                    <p class="blogReadmore">Read more</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div>
+                                    <div id="blog3hoverDiv">
+                                        <p id="blogImgText3"><i class="fa-regular fa-user"></i> Theresa Sinclair<br><span class="blogDate"><i class="fa-regular fa-clock"></i> 25th July 2021</span></p>
+                                        <img id="blogImg3" src="img/blog3.png" alt="image de blog 3">
+                                    </div>
+                                    <h5>Design your apps in your own way</h5>
+                                    <p class="blogText">Pityful a rethoric question ran over her cheek, then she continued her way.</p>
+                                    <p class="blogReadmore">Read more</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <script>
+
+                        // Collapse section Blog sur mobile:
+                        document.getElementById("contentBlogWrapper").addEventListener("click", function() {
+                            document.getElementById("contentBlog").classList.toggle("uncollapsedBlog");
+                            document.getElementById("chevronCollapse").classList.toggle("chevronInverted");
+                        })
+                    </script>
 
 
                     <div class="separatorPC" style="height:15vh;"></div>
@@ -471,7 +485,7 @@
             ScrollReveal().reveal('#contentListPoeple');
             ScrollReveal().reveal('#parallax');
             ScrollReveal().reveal('#contentBlogWrapper');
-            ScrollReveal().reveal('#contentListBlog');
+            // ScrollReveal().reveal('#contentListBlog');
             ScrollReveal().reveal('#testimonialsDiv');
             ScrollReveal().reveal('#pricingHeader');
             ScrollReveal().reveal('#pricingContent');

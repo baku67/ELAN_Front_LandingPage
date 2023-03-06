@@ -1,3 +1,12 @@
+#chevronCollapse {
+    display: none;
+}
+#contentBlog {
+}
+.uncollapsedBlog {
+}
+
+
 #subscribeInputLine {
     display: inline-flex;
     overflow: hidden;
@@ -344,9 +353,14 @@ main {
     margin: 0 auto;
 
 }
-#contentBlogWrapper p {
+#blogText {
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    width: 75%;
     font-size: 80%;
     color: rgba(127, 127, 127, 1);
+    margin-bottom: 25px;
 }
 
 
