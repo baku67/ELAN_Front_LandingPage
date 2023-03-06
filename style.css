@@ -1,3 +1,8 @@
+#subscribeInputLine {
+    display: inline-flex;
+    overflow: hidden;
+}
+
 .pricingFlexResp {
     display: block;
 }
@@ -215,7 +220,8 @@ nav a {
 }
 #subscribeSubmit {
     position: relative;
-    right: 95px;
+    right: 84px;
+    transform: scale(0.9);
     /* transform: translateY(3px); */
     border: 0px;
     padding: 5px 15px;

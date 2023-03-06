@@ -60,6 +60,23 @@
 }
 
 @media screen and (max-width: 600px) {
+
+    #headerTextsWrapper {
+        overflow: hidden;
+    }
+
+    #subscribeSubmit {
+        position: relative;
+        /* bottom: 3px; */
+        right: 84px;
+        transform: scale(0.9);
+    }
+    /* #pricingHeaderLeft {
+        width: 80%;
+    } */
+    #brandList {
+        width: 90%;
+    }
     .offerList {
         font-size: 92%;
         margin-block-start: 30px;
@@ -133,11 +150,6 @@
 
         margin: 0 auto 10px auto;      
     }
-    #subscribeSubmit {
-        position: absolute;
-        bottom: 3px;
-        right: 40px;
-    }
     .separatorPC {
         display: none;
     }
@@ -184,7 +196,7 @@
         flex-direction: column-reverse;
     }
     #pricingHeaderLeft {
-        width: 75%;
+        width: 85%;
         margin: 0 auto;
         text-align: justify;
     }
