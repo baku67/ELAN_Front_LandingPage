@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 760px) and (max-width: 1200px) {
 
     #svgHeader {
         width: 400px;
@@ -52,6 +52,12 @@
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
+    #svgHeader {
+        display: none;
+    }
+    #subscribeInput {
+        width: 80%;
+    }
     #socialList li {
         margin: 0;
     }

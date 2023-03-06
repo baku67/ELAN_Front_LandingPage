@@ -1,3 +1,8 @@
+a {
+    text-decoration: none;
+    color: #7f7f7f;
+}
+
 html {
     height: 100%;
     box-sizing: border-box;
@@ -868,9 +873,24 @@ footer ul {
     justify-content: space-around;
 }
 #footerList1 li {
-    padding: 8px 12px;
+    padding: 8px 11px;
     border: 2px solid rgb(145 145 145 / 80%);
     border-radius: 100px;
+}
+#footerList1 li:hover {
+    color: rgba(226, 226, 226, 0.8);
+    cursor: pointer;
+    border: 2px solid rgba(226, 226, 226, 0.8);
+}
+.offerButton, #pricingButton {
+    transition: all 0.3s;
+}
+
+.offerButton:hover, #pricingButton:hover {
+    background-color: #2b71d3;
+}
+.topnav a:hover {
+    cursor: pointer;
 }
 #googleFooter {
     padding: 8px !important;

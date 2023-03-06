@@ -1,0 +1,14 @@
+@media only screen and (max-width: 350px) and (min-width: 450px) {
+    #svgHeader {
+        display: none;
+    }
+    #subscribeInput {
+        width: 80%;
+    }
+    #headerContentWrapper {
+        width:85%;
+    }
+    #subscribeSubmit {
+        right: 41px;
+    }
+}
