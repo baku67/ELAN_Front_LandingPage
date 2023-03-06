@@ -60,8 +60,32 @@
 }
 
 @media screen and (max-width: 600px) {
+    .offerList {
+        font-size: 92%;
+        margin-block-start: 30px;
+        line-height: 25px;
+    }
+    #label {
+        width: 72px;
+    }
+    .offerCard h6 {
+        font-size: 1.1em;
+    }
+    .offerList {
+        margin-left: 30px;
+    }
+    #pricingContent {
+        width: 90%;
+        padding: 9px 8px 50px 8px;
+    }
+    #pricingText {
+        margin-bottom: 12px;
+    }
+    .pricingFlexResp {
+        display: inline-flex;
+    }
     .offerCard {
-        width: 70%;
+        width: 88%;
         margin: 10px auto;
     }
 
