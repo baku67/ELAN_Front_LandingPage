@@ -66,6 +66,7 @@
         transition: all 0.3s ease-in-out;
     }
     .blogSectionBorder {
+        background-color: rgba(64, 148, 185, 0.2);
         width: 85%;
         position: relative;
         margin: 0 auto;
@@ -78,6 +79,8 @@
         transition: all 0.3s ease-in-out;
     }
     .blogTitleBorder {
+        background-color: rgba(64, 148, 185, 0.2);
+
         padding: 10px 40px;
         border: 2px solid #4094b9;
         border-radius: 5px;
