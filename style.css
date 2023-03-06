@@ -426,6 +426,7 @@ main {
     top: 20%;
     background-color: #3e3e3e;
     border-radius: 3px;
+    z-index: 999;
 
     cursor: pointer;
 }

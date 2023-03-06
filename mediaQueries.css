@@ -45,18 +45,31 @@
     #testimonialsDiv {
         transform: scale(0.9);
     }
+
 }
 
 
 
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 350px) {
+    #headerContentWrapper {
+        width: 85% !important;
+        margin: 0 auto;
+    }
+}
+
 @media screen and (max-width: 600px) {
+    .offerCard {
+        width: 70%;
+        margin: 10px auto;
+    }
+
     #svgHeader {
         display: none;
     }
     #subscribeInput {
-        width: 80%;
+        width: 230px;
     }
     #socialList li {
         margin: 0;
@@ -71,7 +84,7 @@
     }
     #headerTextsWrapper {
         margin-right: 0;
-        left: 0;
+        left: 20px;
         margin-top: 0;
     }
     #contentHeaderWrapper {
@@ -99,7 +112,7 @@
     #subscribeSubmit {
         position: absolute;
         bottom: 3px;
-        right: -42px;
+        right: 40px;
     }
     .separatorPC {
         display: none;
@@ -157,10 +170,6 @@
     }
     #offersDiv {
         flex-direction: column;
-    }
-    .offerCard {
-        width: 70%;
-        margin: 10px 15px;
     }
     #pricingText {
         width: 90%;
