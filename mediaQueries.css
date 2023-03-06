@@ -61,13 +61,35 @@
 
 @media screen and (max-width: 600px) {
 
+    #blogSectionContainer {
+        margin-top: 20px;
+        transition: all 0.3s ease-in-out;
+    }
+    .blogSectionBorder {
+        width: 85%;
+        position: relative;
+        margin: 0 auto;
+        border: 2px solid #4094b9;
+        border-radius: 5px;
+        padding: 0 10px;
+    }
+
+    #blogTitle {
+        transition: all 0.3s ease-in-out;
+    }
+    .blogTitleBorder {
+        padding: 10px 40px;
+        border: 2px solid #4094b9;
+        border-radius: 5px;
+    }
+
     #contentListPoeple {
         transform: scale(0.8);
         gap: 0px 28px;
     }
 
     #chevronCollapse {
-        color: black;
+        color: #4094b9;
         font-size: 80%;
         margin: 0 10px;
         position: relative;
@@ -86,14 +108,14 @@
     }
 
     #contentBlog {
-        visibility: collapse;
-        /* overflow: hidden; */
-        height: 0;
-        transition: all 0.5s;
+        /* visibility: collapse; */
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.3s ease-in-out;
     }
     .uncollapsedBlog {
-        visibility: visible !important;
-        height: fit-content !important;
+        /* visibility: visible !important;
+        height: fit-content !important; */
     }
 
 
