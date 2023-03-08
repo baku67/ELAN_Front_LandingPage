@@ -66,24 +66,55 @@
         transition: all 0.3s ease-in-out;
     }
     .blogSectionBorder {
-        background-color: rgba(64, 148, 185, 0.2);
+        background-color: rgba(64, 148, 185, 0.1);
         width: 85%;
         position: relative;
         margin: 0 auto;
-        border: 2px solid #4094b9;
-        border-radius: 5px;
+        border: 1px solid #4094b9;
+        border-radius: 3px;
         padding: 0 10px;
+    }
+
+    #featuresSectionContainer {
+        transition: all 0.3s ease-in-out;
+    }
+
+    #featuresText {
+        text-align: center;
+        width: 75%;
+        margin: 0 auto;
+        color: rgba(127, 127, 127, 1);
+    }
+    #blogText {
+        text-align: center;
+        width: 75%;
+        margin: 0 auto;
+        color: rgba(127, 127, 127, 1);
     }
 
     #blogTitle {
         transition: all 0.3s ease-in-out;
     }
     .blogTitleBorder {
-        background-color: rgba(64, 148, 185, 0.2);
+        background-color: rgba(64, 148, 185, 0.1);
 
-        padding: 10px 40px;
-        border: 2px solid #4094b9;
-        border-radius: 5px;
+        padding: 10px 58px;
+        border: 1px solid #4094b9;
+        border-radius: 3px;
+    }
+    #featuresTitle {
+        display: inline-flex;
+        transition: all 0.3s ease-in-out;
+    }
+    #contentHeaderWrapper {
+        width: 99% !important;
+    }
+    .featuresTitleBorder {
+        background-color: rgba(64, 148, 185, 0.1);
+
+        padding: 10px 10px;
+        border: 1px solid #4094b9;
+        border-radius: 3px;
     }
 
     #contentListPoeple {
@@ -119,6 +150,17 @@
     .uncollapsedBlog {
         /* visibility: visible !important;
         height: fit-content !important; */
+    }
+
+    #contentFeatures {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    #featuresSectionContainer {
+        margin-top: 20px;
+        margin-bottom: 40px;
     }
 
 
@@ -230,7 +272,7 @@
         margin: 0 15px;
     }
     #contentBlogWrapper {
-        width: 75%;
+        width: 95%;
     }
     #contentListBlog {
         flex-direction: column;

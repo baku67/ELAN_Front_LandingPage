@@ -155,30 +155,56 @@
 
                 </header>   
                 
+
+
                 <main>
 
-                    <div id="contentHeaderWrapper">
-                        <h2 id="featuresTitle">Products Features</h2>
-                        <p>It is a long established fact that a reader will be of a page when estableshed fact looking at its layout.</p>
+                    <div id="featuresSectionContainer">
+                        <div id="contentHeaderWrapper" class="collapsible" type="button">
+                            <h2 id="featuresTitle" class="featuresTitleBorder">Products Features <i id="chevronCollapse" class="fa-solid fa-chevron-up"></i></h2>
+                        </div>
+
+                        <div id="contentFeatures" class="content">
+
+                            <p id="featuresText">It is a long established fact that a reader will be of a page when estableshed fact looking at its layout.</p>
+
+                            <ul id="contentListBoxes">
+                                <li id="box1">
+                                    <i class="centeredIcon fa-solid fa-globe"></i>
+                                    <h3 class="centered">Digital Design</h3>
+                                    <p class="centered contentBoxText">Some quick example text to build on the card title and make up the bulk of the card the platform.</p>
+                                </li>
+                                <li id="box2">
+                                    <i class="centeredIcon fa-solid fa-brush"></i>
+                                    <h3 class="centered">Unlimited Colors</h3>
+                                    <p class="centered contentBoxText">Credibly brand stanaads(?) compliant user exteible services College Anibh ocean euismod tincidunt laoreet</p>
+                                </li>
+                                <li id="box3">
+                                    <i class="centeredIcon fa-solid fa-chess"></i>
+                                    <h3 class="centered">Strategy Solutions</h3>
+                                    <p class="centered contentBoxText">Separated they live in Bookmarks grove right at the coast of the Semantics, a large ocean regelialia</p>
+                                </li>
+                            </ul>
+
+                        </div>
                     </div>
 
-                    <ul id="contentListBoxes">
-                        <li id="box1">
-                            <i class="centeredIcon fa-solid fa-globe"></i>
-                            <h3 class="centered">Digital Design</h3>
-                            <p class="centered contentBoxText">Some quick example text to build on the card title and make up the bulk of the card the platform.</p>
-                        </li>
-                        <li id="box2">
-                            <i class="centeredIcon fa-solid fa-brush"></i>
-                            <h3 class="centered">Unlimited Colors</h3>
-                            <p class="centered contentBoxText">Credibly brand stanaads(?) compliant user exteible services College Anibh ocean euismod tincidunt laoreet</p>
-                        </li>
-                        <li id="box3">
-                            <i class="centeredIcon fa-solid fa-chess"></i>
-                            <h3 class="centered">Strategy Solutions</h3>
-                            <p class="centered contentBoxText">Separated they live in Bookmarks grove right at the coast of the Semantics, a large ocean regelialia</p>
-                        </li>
-                    </ul>
+                    <script>
+                        // Collapse section Blog sur mobile:
+                        document.getElementById("contentHeaderWrapper").addEventListener("click", function() {
+                            // document.getElementById("contentFeatures").classList.toggle("uncollapsedBlog");
+                            document.getElementById("featuresSectionContainer").classList.toggle("blogSectionBorder");
+                            document.getElementById("featuresTitle").classList.toggle("featuresTitleBorder");
+                            document.getElementById("chevronCollapse").classList.toggle("chevronInverted");
+                            if (document.getElementById("contentFeatures").style.maxHeight) {
+                                document.getElementById("contentFeatures").style.maxHeight = null;
+                            }
+                            else {
+                                document.getElementById("contentFeatures").style.maxHeight = document.getElementById("contentFeatures").scrollHeight + "px";
+                            }
+                        })
+                    </script>
+
 
 
                     <div class="separatorPC" style="height:15vh;"></div>
@@ -186,7 +212,7 @@
 
                     <div>
                         <div id="contentHeaderWrapper2">
-                            <h2 id="clientTitle">We'r dynamic team of talented people of innovative & marketing expert</h2>
+                            <h2 id="clientTitle">We're dynamic team of talented people of innovative & marketing expert</h2>
                             <p>To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages of the resulting language.</p>
                         </div>
 
